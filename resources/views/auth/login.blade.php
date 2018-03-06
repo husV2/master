@@ -1,0 +1,67 @@
+@extends('layouts.auth')
+@section('content')
+@if(isset($failed) && ($failed))
+<script>
+    $(function(){
+        $('#gridSystemModal').modal('show');
+    });
+</script>
+@endif
+<div class="row">
+    <div class="col-sm-8">
+            <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
+                    {{ csrf_field() }}
+                    <div class="form-group">
+                            <div class="col-sm-10">
+    <input id="username" type="username" class="form-control" name="username" value="{{ old('username') }}" placeholder="{{ trans('auth.username') }}">
+
+    @if ($errors->has('username'))
+        <span class="help-block">
+            <strong>{{ $errors->first('username') }}</strong>
+        </span>
+    @endif
+                            </div>
+                            <div class="col-sm-2 helpiconcol">
+                                    <span class="info_sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Tähän ohjeita, että mitä typottaa.">&#x24d8;</span>
+                            </div>
+                    </div>
+                    <div class="form-group">
+                            <div class="col-sm-10">
+    <input id="password" type="password" class="form-control" name="password" placeholder="{{ trans('auth.password') }}">
+
+    @if ($errors->has('password'))
+        <span class="help-block">
+            <strong>{{ $errors->first('password') }}</strong>
+        </span>
+    @endif
+                            </div>
+                            <div class="col-sm-2 helpiconcol">
+                                    <span class="info_sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Tähän ohjeita, että mitä typottaa.">&#x24d8;</span>
+                            </div>
+                    </div>
+                    <div class="form-group d_btnsign">
+                            <div class="col-sm-5">
+                                    <button type="submit" id="btn_signin" class="btn btn-default">{{ trans('auth.login') }}</button>
+                            </div>
+                            <div class="col-sm-3">
+                                    <a href="{{ url('/password/reset') }}">{{ trans('auth.forgotten') }}</a>
+                            </div>
+                    </div>
+            </form>
+            <div class="d_newuser">
+                    <type="button" class="text-faded text-button" data-toggle="modal" data-target="#gridSystemModal">{{ trans('auth.newuser') }}</button>
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </div>
+    </div>
+    <div class="col-sm-4">
+            <img src="{{ URL::asset('img/apuri_welcome.gif') }}" class="img-responsive helper_welcome">
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+            <p class="text-faded copyright_placement">&#9400; HUS minitreeni 2016</p>
+    </div>
+</div>
+</div>
+<?= isset($modal) ? $modal : "" ?>
+@endsection

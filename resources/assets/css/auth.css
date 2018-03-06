@@ -1,0 +1,137 @@
+html{
+ height:100%;
+ min-height:100%;
+ }
+body{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    min-height:100%;
+}
+
+.container {
+    border: solid 1px #a1a2a5;
+    margin-top: 1%;
+}
+
+.row:nth-child(1) {
+	padding: 3%;
+	color: #a1a2a5;
+}
+.row:nth-child(2) > div.col-sm-12 {
+	height: 80px;
+}
+.row:nth-child(3) {
+	height: 400px;
+}
+.row:nth-child(3) > div {
+	height: 90%;
+
+}
+.row:nth-child(4) {
+	padding: 0 2%;
+}
+.d_btnsign {
+	padding: 0;
+}
+
+a, .text-faded {
+	color: #a1a2a5;
+}
+a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.circletainer {
+    height: 220px;
+    width: 220px;
+    background: #269b9e;
+    border-radius: 200px;
+    float: right;
+    position: absolute;
+    right: 30%;
+    top: -50%;
+}
+
+.circletainer > p {
+    text-align: center;
+    width: 70%;
+    margin: 25% 15%;
+    height: 50%;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+}
+img.img-responsive {
+    height: 100%;
+}
+
+form.form-horizontal {
+    width: 50%;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+.form-control {
+    height: 50px;
+    border: solid 1px #bfbfc2;
+    box-shadow: inset 0 0 15px #a1a2a5;
+    border-radius: 5px;
+}
+.d_newuser {
+    width: 50%;
+    margin-left: 15%;
+}
+
+.dunno > a {
+    font-size: 16px;
+    color: #a1a2a5;
+}
+.helpiconcol {
+	height: 50px;
+	padding-left: 0;
+	line-height: 50px;
+}
+
+.glyphicon {
+    color: #a1a2a5;
+    font-size: 16px;
+}
+.tooltip-inner {
+	background-color: #abc549;
+	font-weight: bold;
+	font-size: 16px;
+	width: 200%;
+}
+.tooltip-arrow {
+	border-right-color: #abc549 !important;
+}
+#btn_signin {
+	-moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	-webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	box-shadow: inset 0px 1px 3px 0px #2cb1b5;
+	background-color: #269b9e;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border: 1px solid #1c7375;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 14px;
+	font-weight:bold;
+	padding: 8px 0px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+	width: 100%;
+}
+#btn_signin:hover {
+	-moz-box-shadow:inset 0px 1px 3px 0px #1c7395;
+	-webkit-box-shadow:inset 0px 1px 3px 0px #1c7395;
+	box-shadow: inset 0px 1px 3px 0px #1c7395;
+	background-color: #1c7375;
+}
+#btn_signin:active {
+	position:relative;
+	top:1px;
+}
