@@ -1,0 +1,31 @@
+@keyframes roll {
+    from {left: -1000px;}
+    to {left: 0px;}
+}
+.friend_request_message
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: solid 1px #999;
+    box-shadow: 1px 1px 1px #888888; 
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    z-index: 10;
+    font-size: 12px;
+    -webkit-animation-name: roll;
+    -webkit-animation-duration: 0.8s;
+    animation-name: roll;
+    animation-duration: 0.8s;
+}
+.friend_request_message h5
+{
+    text-transform: uppercase;
+    color: #269b9e;
+}
+.friend_request_message .friend_request_block
+{
+    text-align: center;
+    padding: 10px;
+}

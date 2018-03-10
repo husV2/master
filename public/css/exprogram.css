@@ -1,0 +1,57 @@
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 20px 0;
+	margin-bottom: 10px;
+}
+
+ul.day-ex-list {
+	padding: 20px;
+}
+
+li {
+	margin: 5px;
+	padding: 5px;
+}
+
+#ex-list > li {
+	float: left;
+	width: 220px;
+	height: 40px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#trashcan {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}
+
+.sortable {
+	border: #abc549 solid 2px;
+}
+
+ul#ex-list {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.day-ex-list > li {
+    width: auto !important;
+    height: auto !important;
+}
+
+.day-ex-list > li, #ex-list > li{
+	color: white;
+	font-weight: bold;
+}
+
+#ex-program-form {
+	margin-top: 20px
+}
+
+#ex-filter {
+	margin-bottom: 10px
+}

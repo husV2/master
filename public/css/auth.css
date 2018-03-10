@@ -1,0 +1,351 @@
+html{
+ height:100%;
+ min-height:100%;/*asdf*/
+}
+body{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    min-height:100%;
+}
+
+.container {
+    /*border: solid 1px #a1a2a5;*/
+    margin-top: 1%;
+	
+}
+
+.row:nth-child(1) {
+	padding: 3%;
+	color: #a1a2a5;
+}
+.row:nth-child(2) > div.col-sm-12 {
+	height: 80px;
+}
+.row:nth-child(3) {
+	height: 400px;
+}
+.row:nth-child(3) > div {
+	height: 90%;
+
+}
+.row:nth-child(4) {
+	padding: 0 2%;
+}
+.d_btnsign {
+	padding: 0;
+}
+
+a, .text-faded {
+	color: #666;
+}
+a:hover {
+	text-decoration: none;
+	font-weight: bold;
+	color: #249b9e;
+	
+}
+.text-button {
+}
+.text-button:hover {
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+.circletainer {
+    height: 220px;
+    width: 220px;
+    background: #269b9e;
+    border-radius: 200px;
+	-moz-box-shadow: 1px 1px 3px #666;
+	-webkit-box-shadow: 1px 1px 3px #666;
+	box-shadow: 1px 1px 3px #666;
+    float: right;
+    position: absolute;
+    right: 30%;
+    top: -50%;
+}
+
+.circletainer > p {
+    text-align: center;
+    width: 70%;
+    margin: 25% 15%;
+    height: 50%;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+	text-shadow:0px -1px 0px #2b665e;
+}
+.helper_welcome {
+	margin-left:10%;
+}
+form.form-horizontal {
+    width: 50%;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+.form-control {
+    height: 50px;
+    border: solid 1px #666;
+    box-shadow: inset 0 0 5px #999999;
+    border-radius: 3px;
+}
+.d_newuser {
+    width: 50%;
+    margin-left: 15%;
+}
+
+.dunno > a {
+    font-size: 16px;
+    color: #a1a2a5;
+}
+.helpiconcol {
+	height: 50px;
+	padding-left: 0;
+	line-height: 50px;
+}
+
+.glyphicon {
+    color: #a1a2a5;
+    font-size: 16px;
+}
+/* tips */
+.tooltip-inner {
+	background-color: #abc549;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 10px 0px 10px 0px;
+	width: 250%;
+}
+.tooltip-arrow {
+	border-right-color: #abc549 !important;
+}
+
+#btn_signin {
+	-moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	-webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	box-shadow: inset 0px 1px 3px 0px #2cb1b5;
+	background-color: #269b9e;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border: 1px solid #1c7375;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 14px;
+	font-weight:bold;
+	padding: 8px 0px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+	width: 100%;
+}
+#btn_signin:hover {
+	-moz-box-shadow:inset 0px 1px 3px 0px #1c7395;
+	-webkit-box-shadow:inset 0px 1px 3px 0px #1c7395;
+	box-shadow: inset 0px 1px 3px 0px #1c7395;
+	background-color: #1c7375;
+}
+#btn_signin:active {
+	position:relative;
+	top:1px;
+}
+form.form-register {
+    width: 100%;
+    margin: 0;
+}
+
+.modal-header {
+    border-bottom: none;
+    padding-bottom: 5px;
+}
+
+button.close {
+    /*width: 40px; 
+    background-color: #d70a78;
+    border: solid 0;
+    border-radius: 50px; */
+	font-size: 20px;
+    color: #666;
+    font-weight: normal;
+    opacity: 1;
+    text-shadow: none;
+}
+button.close:hover {
+    opacity: 1;
+    color: #d61479;
+}
+button.close:active {
+    opacity: .8;
+    color: white;
+}
+.modal-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.modal-footer {
+    text-align: center;
+    border-top: none;
+    padding-top: 5px;
+}
+.btn_register {
+	background-color:#249b9e;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #1c7375;
+	-moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	-webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	box-shadow: inset 0px 1px 3px 0px #2cb1b5;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+.btn_register:hover {
+	-moz-box-shadow:inset 0px 1px 3px 0px #1c7395;
+	-webkit-box-shadow:inset 0px 1px 3px 0px #1c7395;
+	box-shadow: inset 0px 1px 3px 0px #1c7395;
+	background-color: #1c7375; 
+	
+}
+.btn_register:active {
+	position:relative;
+	top:1px;
+}
+
+span#btn_register_icon {
+    color: white;
+    position: relative;
+    top: 4px;
+}
+p.text-normal {
+    color: black;
+    font-size: 14px;
+}
+
+.text_block {
+    /*border-left: solid 1px black;*/
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+}
+
+.row.reg1 {
+    height: 100%;
+    display: table;
+}
+
+.form-register input {
+    height: 35px;
+}
+.form-register .helpiconcol {
+    height: 35px;
+    line-height: 35px;
+}
+.form-register .form-group {
+	margin-bottom: 10px;
+}
+p.label-normal {
+    color:  black;
+    margin: 0;
+    font-size: 17px;
+}
+.input_block {
+    display: table-cell;
+    float: none;
+}
+.col-sm-12.input_block_label {
+    padding: 0;
+    margin-bottom: 10%;
+}
+.profilebox {
+	padding: 0;
+	margin: 1.6%;
+	border: none;
+	box-shadow: 0 0 5px #abc549;
+	border-radius: 2px;
+}
+.colorbox {
+	padding: 0;
+	margin: 1.6%;
+	border: none;
+	border-radius: 100px;
+}
+.profilebox:after, .colorbox:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.color_scarab{
+	background-color: #269b9e;
+}
+.color_blue{
+	background-color: #26aae8;
+}
+.color_purple{
+	background-color: #84428e;
+}
+.color_green{
+	background-color: #abc549;
+}
+.color_pink{
+	background-color: #d70a78;
+}
+
+.copyright_placement{
+	position:fixed;
+	color: #999;
+	bottom:5px;
+	left: 15px;
+}
+
+.info_sign {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	color: #999;
+	cursor: help;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+    #placeholder_avatar > img{
+        display: none;
+    }
+    
+    #circletainer_row {
+        display: none;
+    }
+    .d_newuser {
+        width: 33%;
+    }
+    #apurigif {
+        position: relative;
+        top: -140px;  /* siirtää kuvan lähemmäs muita elementtejä */
+        z-index: -1; /* katsoo ettei kuva peitä mitään */
+    }
+    /* poistetaan apuri modalista */
+    #apurigif_modal {
+        display: none;
+    }
+}
+/* Tabletit (768px - 991px) */
+@media only screen and (min-width:768px) and (max-width:991px) {
+    
+}
+
+/* Pikku säätöä pienimmille luureille. (Esim. iPhone 5) */
+@media only screen and (max-width: 321px) {
+    #apurigif {
+        position: relative;
+        top: -95px; /* siirtää kuvan lähemmäs muita elementtejä */
+        z-index: -1; /* katsoo ettei kuva peitä mitään */
+    }
+}
