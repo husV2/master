@@ -1,5 +1,5 @@
 <div class="weekly_activity">
-<h4>{{trans('main.weekly_activity') }} <span id="info">&#9432;</span></h4>
+<h4>{{trans('main.weekly_activity') }} <span class="info_sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="{{trans('main.activity_help')}}">&#x24d8;</span></h4>
 <canvas id="weekly_activity" height="300"></canvas>
 
 

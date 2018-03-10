@@ -1,0 +1,38 @@
+.vitalities {
+	width: 100%
+	height: 100%;
+	display: table;
+	margin: auto;
+}
+
+.vitalities div {
+	display: table-cell;
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+	float: left;
+	margin: 10px 30px;
+}
+
+p.survey-text {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+p.survey-text.description {
+	margin-top: 20px;
+	margin-bottom: 40px
+}
+
+.survey-button {
+	background-color: #249b9e;
+	padding: 10px;
+	border-style: none;
+	color: #fff;
+	font: arial
+}
+
+.sent {
+	opacity: 0.5;
+	cursor: default;
+}

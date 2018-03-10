@@ -1,0 +1,33 @@
+#statistics h4 span
+{
+    font-size: 20px;
+}
+
+#statistics h4
+{
+    text-transform: uppercase;
+    margin: 0 auto;
+	color: #249b9e;
+}
+
+.rank_colored
+{
+    font-size: 33px;
+    color: #269b9e;
+}
+@media (min-width: 992px)
+{
+    #statistics .col-md-8
+    {
+        border-right: 1px solid #a1a2a5;
+    }
+}
+@media (max-width: 991px)
+{
+    #statistics .col-md-8
+    {
+        border-right: none;
+        border-bottom: 1px solid #a1a2a5;
+    }
+}
+

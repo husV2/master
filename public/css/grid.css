@@ -1,0 +1,66 @@
+/** These were used for tooltip-style grid. Not the grid is scroll down-type **/
+/*.grid.open
+{
+    opacity: 1;
+    z-index: 3;
+}
+.grid
+{
+    float: right;  
+    z-index: -10000;
+    right: 0px;
+    top: 35px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 5px;
+    position:absolute;
+    width: 100%;
+    min-height: 100px;
+    transition: opacity 0.4s;
+    display: block;
+    opacity: 0;
+    text-align: center;
+    box-shadow: 1px 1px 1px #888888;
+}
+.grid #result_message
+{
+    color: #999;
+    line-height: 100px;
+}*/
+
+/** New style starts here **/
+.grid
+{
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.grid-item
+{
+    position: relative;
+    box-sizing: border-box;
+    padding: 5px 0px 5px 0px;
+    margin-bottom: 5px;
+    width: 100%;
+    max-height: 55px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+.grid-item .profile-img-container
+{
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    float:left;
+}
+.grid-item p
+{
+    display: inline-block;
+}
+.friendReq_btn
+{
+    float:right;
+}
+

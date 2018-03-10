@@ -14,12 +14,12 @@
 		<div class="col-md-4 col-sm-12 border_left">
 			
 			<div class="col-md-12 col-sm-12">
-				<h4>{{trans('main.upper_department_rank')}} <span id="info">&#9432;</span></h4>
+				<h4>{{trans('main.upper_department_rank')}} <span class="info_sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="{{trans('main.Upperdepartment_rank_info')}}">&#x24d8;</span></h4>
                     <div class="col-md-12 rank"><?= isset($upper_department) ? $upper_department : "" ?></div>
 					<!-- <div class="col-md-6 equal"><p>pokaali</p></div> -->
 			</div>
 			<div class="col-md-12 col-sm-12">
-				<h4>{{trans('main.department_rank')}} <span id="info">&#9432;</span></h4>
+				<h4>{{trans('main.department_rank')}} <span class="info_sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="{{trans('main.department_rank_info')}}">&#x24d8;</span></h4>
 				<div class="col-md-12 rank"><?= isset($department) ? $department : "" ?> </div>
 				<!-- <div class="col-md-6 equal"><p>pokaali</p></div> -->
                     
@@ -36,12 +36,9 @@
                 </div>
                 <div class="col-md-12 col-sm-12">
                 </div>
-            
         </div>
-        
     </div>
 </div>
-
 <style>
     canvas{
         max-width:<?= $width ?>px;

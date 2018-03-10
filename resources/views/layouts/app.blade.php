@@ -56,7 +56,8 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-3">
-					<img src="{{ URL::asset('img/logo.png') }}" class="img-responsive">
+					<a href="{{ url('/') }}">
+					<img src="{{ URL::asset('img/logo.png') }}" class="img-responsive"></a>
 				</div>
 				<div class="col-sm-9">
 					<div class="row" id="nomargin">
@@ -64,7 +65,7 @@
 							@if(!isset($nav_countdown))
 								<div class="cd_cont"><p id="cd-title" style="display: none">Treenin aika!</p>
 								<button class="cd-accept" id="cd-ac-nav" style="display: none">Suorita!</button>
-								<a class="cd-snooze" id="cd-sn-nav" style="display: none">Myöhemmi</a>
+								<a class="cd-snooze" id="cd-sn-nav" style="display: none">Myöhemmin...</a>
 								</div>
 							@endif
 						</div>
@@ -95,7 +96,7 @@
 				<div class="col-sm-2 col-sm-offset-10 col-logout">
 					<div class="link_placement">
                                             @if(!Auth::guest())
-						<a class="link_logout" href="{{ url('/logout') }}">Kirjaudu<br>ulos!</a>
+						<a class="link_logout" href="{{ url('/logout') }}">Kirjaudu ulos!</a>
                                             @endif
 					</div>
 				</div>
