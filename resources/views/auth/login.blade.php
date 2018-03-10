@@ -22,7 +22,7 @@
     @endif
                             </div>
                             <div class="col-sm-2 helpiconcol">
-                                    <span class="info_sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Tähän ohjeita, että mitä typottaa.">&#x24d8;</span>
+                                    <span class="info_sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="{{trans('main.login_username')}}">&#x24d8;</span>
                             </div>
                     </div>
                     <div class="form-group">
@@ -36,7 +36,7 @@
     @endif
                             </div>
                             <div class="col-sm-2 helpiconcol">
-                                    <span class="info_sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Tähän ohjeita, että mitä typottaa.">&#x24d8;</span>
+                                    <span class="info_sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="{{trans('main.login_password')}}">&#x24d8;</span>
                             </div>
                     </div>
                     <div class="form-group d_btnsign">
@@ -49,7 +49,7 @@
                     </div>
             </form>
             <div class="d_newuser">
-                    <type="button" class="text-faded text-button" data-toggle="modal" data-target="#gridSystemModal">{{ trans('auth.newuser') }}</button>
+                    <sclass="text-faded text-button" data-toggle="modal" data-target="#gridSystemModal">{{ trans('auth.newuser') }}</>
                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             </div>
     </div>

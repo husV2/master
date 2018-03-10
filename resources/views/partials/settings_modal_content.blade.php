@@ -48,7 +48,7 @@
             @elseif($key === 'generateRandom')
             <div class="checkbox">
                 <label><input type="checkbox" value="1" name="{{$key}}" <?= $setting ? "checked" : "" ?>>{{trans('main.generateRandom_choose')}}</label>
-                <span data-toggle="tooltip" title="{{trans('main.generateRandom_info')}}" id="info">&#9432;</span>
+                <span id="info_sign" data-toggle="tooltip" title="{{trans('main.generateRandom_info')}}" id="info">&#9432;</span>
             </div>
             @endif
             
