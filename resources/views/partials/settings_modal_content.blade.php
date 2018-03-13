@@ -27,8 +27,6 @@
 
             @elseif($key === 'event_interval')
             <select type="number" name="{{$key}}" class="form-control interval-chooser" />
-                <option value='1'>1 min</option>
-                <option value='5'>5 min</option>
                 <option value='10'>10 min</option>
                 <option value='15'>15 min</option>
                 <option value='20'>20 min</option>
@@ -55,4 +53,5 @@
         </div>
     @endforeach
     <button type="submit" class="btn btn-success save-btn">{{trans('main.save')}}</button>
+    <button type="button" class="btn btn-default" data-dismiss="modal">{{trans('main.close')}}</button>
 </form>
