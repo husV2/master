@@ -76,7 +76,7 @@ return [
     'settings' => 'Asetukset',
     'modify_calendar' => 'Muokkaa harjoitusaikataulua',
     'modify' => 'Muokkaa',
-    'write_message' => 'Kirjoita viesti!',
+    'write_message' => 'Viestiseinä toimii kaikkien käyttäjien yhteisenä kohtauspaikkana, jossa voit jakaa kaikille, mikä saa sinua sitoutumaan harjoitteluun, kannustaa toisia ja saada kannustusta heiltä.',
     'characters_left' => 'Merkkejä jäljellä:',
     'send' => 'Lähetä',
     'cantSendEmpty' => 'Viestisi on liian lyhyt.',

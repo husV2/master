@@ -26,6 +26,7 @@
                     <input type="password" name="confirm_password" class="form-control" />
                 </div>
                 <button type="button" class="btn btn-success pw-change-button">{{trans('main.save')}}</button>
+                <a href="{{ url('/profile') }}"><button type="button" class="btn btn-default">{{trans('main.back')}}</button></a>
             </form>
             <span class="success-block" style="display: none"><strong></strong></span>
         </div>
