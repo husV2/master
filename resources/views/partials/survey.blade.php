@@ -41,13 +41,13 @@ var submitSurveyUrl = "{{ url('survey/submit') }}";
 	<div class="modal-content">
 		<div class="modal-header">
 			<div class="col-sm-10">
-				<p class="mod_title">Vireys kysely</p>
+				<p class="mod_title">{{trans('main.survey')}}</p>
 			</div>
 		</div>
 		<div class="modal-body">
 			<div class="row"> <!-- Vireyskyselyn kuvaus -->
 				<div class="col-sm-12">
-					<p class="survey-text">Vireyskyselyllä pystyt seuraamaan HUS Minitreeniohjelman käytön vaikuttavuutta työssä jaksamiseen. Voit tehdä testin kun itsellesi parhaiten sopii.</p>
+					<p class="survey-text">{{trans('main.survey_info')}}</p>
 				</div>
 			</div>
 			<div class="row">
@@ -63,16 +63,16 @@ var submitSurveyUrl = "{{ url('survey/submit') }}";
 			</div>
 			<div class="row">
 				<div class="col-sm-12">
-					<p id="vitalityDescription" class="survey-text description">Valitse naama, joka kuvaa tämän hetkistä vireyttäsi.</p>
+					<p id="vitalityDescription" class="survey-text description">{{trans('main.survey_pick')}}</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-3 col-sm-push-9">
-					<button id="saveSurvey" type="button" class="survey-button">Tallenna vastaus</button>
+					<button id="saveSurvey" type="button" class="survey-button">{{trans('main.survey_save')}}</button>
 				</div>
 				<div class="col-sm-2 col-sm-push-4">
 					<button type="button" class="survey-button" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">Myöhemmin</span>
+						<span aria-hidden="true">{{trans('main.survey_later')}}</span>
 					</button>
 				</div>
 			</div>

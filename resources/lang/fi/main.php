@@ -4,9 +4,13 @@ return [
 
 
     'title' => 'Minitreeniohjelma',
+    'main_title' => 'HUS Minitreeni DEMO',
     'back' => 'Takaisin',
     'home' => 'Oma Treeni',
     'profile' => 'Profiili',
+    'admin' => 'Ylläpito',
+    'logout' => 'Kirjaudu ulos!',
+    'hus_copyright' => 'HUS Minitreeni 2016',
     'charts' => 'Tulostaulukko',
     'accomplishments' => 'Saavutukset',
     'your_accomplishments' => 'Saavutuksesi',
@@ -48,7 +52,13 @@ return [
     'email' => 'Email',
     'next' => 'Seuraava',
     'back' => 'Takaisin',
+    'survey' => 'Vireyskysely',
+    'survey_info' => 'Vireyskyselyllä pystyt seuraamaan HUS Minitreeniohjelman käytön vaikuttavuutta työssä jaksamiseen. Voit tehdä testin kun itsellesi parhaiten sopii.',
+    'survey_pick' => 'Valitse naama, joka kuvaa tämän hetkistä vireyttäsi.',
+    'survey_save' => 'Tallenna vastaus',
+    'survey_later' => 'Takaisin',
     //tässä on muutama help-boksi ja niiden sisältö
+    'welcome' => 'Tervetuloa! Tästä alkaa minitreenisi.',
     'login_username' => 'Anna valitsemasi käyttäjänimi',
     'login_password' => 'Anna salasanasi',
     'username_help' => 'Keksi itsellesi sopiva käyttäjänimi.',
@@ -88,6 +98,12 @@ return [
     'consecutive_days' => 'peräkkäisenä työpäivänä.',
     'login_record' => 'Ennätyksesi on %s%d%s peräkkäistä työpäivää.',
     'guest_consecutive_logins' => 'Hän on kirjautunut säännöllisesti',
-    'guest_login_record' => 'Hänen ennätyksensä on %s%d%s peräkkäistä työpäivää.'
+    'guest_login_record' => 'Hänen ennätyksensä on %s%d%s peräkkäistä työpäivää.',
+    'train_time' => 'Treenin aika!',
+    'train_now' => 'Suorita!',
+    'train_later' => 'Myöhemmin',
+    'training_decline' => 'Hylkää',
+    'training_ready' => 'Valmis',
+    'training_notificationSound' => 'Ilmoitusääni pois päältä'
 
 ];
