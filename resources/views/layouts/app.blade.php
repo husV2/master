@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @yield('meta')
 
-    <title>HUS Minitreeni DEMO</title>
+    <title>{{trans('main.main_title')}}</title>
 	
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -26,7 +26,8 @@
 	});
 	</script>
 	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="{{ URL::asset('css/home.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/friend_request_message.css') }}">
 	<link rel="shortcut icon" href="{{{ asset('img/HUS_favicon.png') }}}">
@@ -63,9 +64,9 @@
 					<div class="row" id="nomargin">
 						<div class="col-md-7 col-md-offset-1">
 							@if(!isset($nav_countdown))
-								<div class="cd_cont"><p id="cd-title" style="display: none">Treenin aika!</p>
-								<button class="cd-accept" id="cd-ac-nav" style="display: none">Suorita!</button>
-								<a class="cd-snooze" id="cd-sn-nav" style="display: none">Myöhemmin...</a>
+								<div class="cd_cont"><p id="cd-title" style="display: none">{{trans('main.train_time')}}</p>
+								<button class="cd-accept" id="cd-ac-nav" style="display: none">{{trans('main.train_now')}}</button>
+								<a class="cd-snooze" id="cd-sn-nav" style="display: none">{{trans('main.train_later')}}</a>
 								</div>
 							@endif
 						</div>
@@ -73,9 +74,9 @@
 							<div class="equal navbox">
 								<div class="text-right nopads"><a class="link_usernav" href="{{ url('/') }}" id="nav_treeni">{{ trans('main.home') }}</a></div>
 								<div class="text-right nopads"><a class="link_usernav" href="{{ url('/charts') }}" id="nav_charts">{{ trans('main.charts') }}</a></div>
-                                                                <div class="text-right nopads"><a class="link_usernav" href="{{ url('/profile') }}" id="nav_profile">{{ trans('main.profile') }}</a></div>
+                                <div class="text-right nopads"><a class="link_usernav" href="{{ url('/profile') }}" id="nav_profile">{{ trans('main.profile') }}</a></div>
 								@if(!Auth::guest() && Auth::user()->isAdmin)
-									<div class="text-right nopads"><a class="link_usernav" href="{{ url('/admin') }}" id="nav_admin">Ylläpito</a></div>
+									<div class="text-right nopads"><a class="link_usernav" href="{{ url('/admin') }}" id="nav_admin">{{ trans('main.admin') }}</a></div>
 								@endif
 							</div>
 						</div>
@@ -96,14 +97,14 @@
 				<div class="col-sm-2 col-sm-offset-10 col-logout">
 					<div class="link_placement">
                                             @if(!Auth::guest())
-						<a class="link_logout" href="{{ url('/logout') }}">Kirjaudu ulos!</a>
+						<a class="link_logout" href="{{ url('/logout') }}">{{trans('main.logout')}}</a>
                                             @endif
 					</div>
 				</div>
 				@yield('content')
 				<div class="row">
 					<div class="col-sm-12">
-						<div class="copyright_placement"><p class="copyright"><span id="copymark">&copy;</span> HUS Minitreeni 2016</p></div>
+						<div class="copyright_placement"><p class="copyright"><span id="copymark">&copy;</span> {{trans('main.hus_copyright')}}</p></div>
 					</div>			
 				</div>
             </div>

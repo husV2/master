@@ -27,7 +27,7 @@ var routes ={
 <script src="{{URL::asset('js/colorLuminance.js')}}"></script>
 <script src="{{URL::asset('js/searchWindowProfile.js')}}"></script>
 <script src="{{URL::asset('js/profileNavigation.js')}}"></script>
-<script src="{{ URL::asset('js/passwordChanger.js') }}"></script>
+<script src="{{URL::asset('js/passwordChanger.js') }}"></script>
 @endsection
 @section('content')
 <?= isset($modal) ? $modal : "" ?>
