@@ -1,5 +1,5 @@
 <div class="friend_activity">
-<h4>{{trans('main.friend_activity') }} <span class="info_sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="{{trans('main.friendActivity_help')}}">&#x24d8;</span>
+<h4>{{trans('main.friend_activity') }} <span class="info_sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="{{trans('main.friendActivity_help')}}">&#x24d8;</span></h4>
 <canvas id="friend_activity"></canvas>
 
 

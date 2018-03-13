@@ -17,6 +17,7 @@
                         </div>
                     <?php endforeach; ?>
                 <button type="submit" class="btn btn-success update-btn">{{trans('main.save')}}</button>
+                <a href="{{ url('/profile') }}"><button type="button" class="btn btn-default">{{trans('main.back')}}</button></a>
             </form>
             <?php endif; ?>
         </div>
