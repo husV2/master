@@ -59,7 +59,7 @@
 </div>
 <div class="row">
     <div class="col-sm-12">
-            <p class="text-faded copyright_placement">&#9400; HUS minitreeni 2016</p>
+            <p class="text-faded copyright_placement">&#9400; {{ trans('auth.hus_copyright') }}</p>
     </div>
 </div>
 </div>

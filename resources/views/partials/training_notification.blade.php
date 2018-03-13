@@ -28,11 +28,11 @@ var exCompletedSoundUrl = "{{ URL::asset('audio/notifications/notification3.mp3'
 						<div class="row">
 							<div class="col-sm-12">
 								<div class="mod_button_placement">
-									<button type="button" class="btn_timer btn btn-md" id="cd-decline">Hylkää</button>
-									<button type="button" class="btn_timer btn btn-md" id="ex-completed" disabled>Valmis</button>
+									<button type="button" class="btn_timer btn btn-md" id="cd-decline">{{trans('main.training_decline')}}</button>
+									<button type="button" class="btn_timer btn btn-md" id="ex-completed" disabled>{{trans('main.training_ready')}}</button>
 								</div>
 								<p id="ex-completed-cd"></p>
-								<input type="checkbox" id="ex-completed-notification"><label>Ilmoitusääni pois/päälle</label>
+								<input type="checkbox" id="ex-completed-notification"><label>{{trans('main.training_notificationSound')}}</label>
 							</div>
 						</div>
 					</div>
