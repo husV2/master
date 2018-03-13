@@ -74,7 +74,7 @@
 							<div class="equal navbox">
 								<div class="text-right nopads"><a class="link_usernav" href="{{ url('/') }}" id="nav_treeni">{{ trans('main.home') }}</a></div>
 								<div class="text-right nopads"><a class="link_usernav" href="{{ url('/charts') }}" id="nav_charts">{{ trans('main.charts') }}</a></div>
-                                <div class="text-right nopads"><a class="link_usernav" href="{{ url('/profile') }}" id="nav_profile">{{ trans('main.profile') }}</a></div>
+                                <div class="text-right nopads"><a class="link_usernav" href="{{ url('/profile') }}" id="nav_profile"><?php echo  Auth::user()->username; ?></a></div>
 								@if(!Auth::guest() && Auth::user()->isAdmin)
 									<div class="text-right nopads"><a class="link_usernav" href="{{ url('/admin') }}" id="nav_admin">{{ trans('main.admin') }}</a></div>
 								@endif
@@ -105,7 +105,7 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<div class="copyright_placement"><p class="copyright"><span id="copymark">&copy;</span> {{trans('main.hus_copyright')}}</p></div>
-					</div>			
+					</div>
 				</div>
             </div>
 		</div><!-- End of container -->
