@@ -43,7 +43,7 @@ return [
     'generateRandom_info' => 'Kun tämä asetus on päällä, generoi ohjelma sinulle jatkuvasti aina uuden harjoituksen',
     'friend_request_sent' => 'Kaveripyyntö lähetetty!',
     'friend_request' => 'Kaveripyyntö!',
-    'friend_requests_from' => 'Olet saanut kaveripyynnön henkilöiltä:',
+    'friend_requests_from' => 'Olet saanut kaveripyynnön henkilöltä:',
     'add_friend' => 'Pyydä kaveriksi',
     'username' => 'Käyttäjätunnus',
     'fullName' => 'Nimi',
@@ -101,7 +101,7 @@ return [
     'guest_login_record' => 'Hänen ennätyksensä on %s%d%s peräkkäistä työpäivää.',
     'train_time' => 'Treenin aika!',
     'train_now' => 'Suorita!',
-    'train_later' => 'Myöhemmin',
+    'train_later' => 'Sulje',
     'training_decline' => 'Hylkää',
     'training_ready' => 'Valmis',
     'training_notificationSound' => 'Ilmoitusääni pois päältä'
