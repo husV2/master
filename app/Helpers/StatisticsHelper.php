@@ -125,9 +125,13 @@ class StatisticsHelper
         $friends = $user->friends;
         $arr = array();
         
-        foreach($friends as $friend)
-        {
-            $arr[$friend->username] = $friend->completed->count();
+        foreach($friends as $friend) {
+            $check = $friend->firstname;
+            if (empty($check)) {
+                $arr[$friend->username]= $friend->completed->count();
+            } else {
+                $arr[$friend->firstname.' '.$friend->lastname[0].'.']= $friend->completed->count();
+            }
         }
         $encoded = json_encode($arr);
         Cache::put($cachename, $encoded, $this->cacheTime);
