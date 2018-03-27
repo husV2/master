@@ -10,7 +10,11 @@ $(document).ready(function() {
     $('#calendar').fullCalendar({
                     // options and callbacks
                     aspectRatio : 1.35,
-                    header: false,
+                    header:{
+                        left: null,
+                        center: null,
+                        right: 'agendaWeek, agendaDay'
+                    },
                     displayEventEnd : true,
                     theme: false,
                     editable: false, // Don't allow editing of events

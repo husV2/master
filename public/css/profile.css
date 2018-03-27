@@ -240,9 +240,6 @@ h4, h5, h3, h2
 {
     #tab-title
     {
-        float: left;
-    }
-    #tab-username {
         float: right;
     }
     .tab-content
@@ -270,6 +267,10 @@ h4, h5, h3, h2
 /*      margin-right: 19px;*/
       border-right: 1px solid #ddd;
     }
+    
+    .nav-tabs {
+        border-bottom: 1px solid #fff;
+    }
 
     .tabs-left > .nav-tabs > li > a {
       margin-right: -1px;
@@ -288,5 +289,6 @@ h4, h5, h3, h2
     .tabs-left > .nav-tabs .active > a:focus {
       border-color: #ddd transparent #ddd #ddd;
       /**border-right-color: #ffffff;*/
+      
     }
 }
