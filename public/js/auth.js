@@ -6,16 +6,19 @@ $(document).ready(function(){
         //liitetään salasanatarkistus molempiin kenttiin
         $("#password1, #confirm_password").focusout(checkPassword);
         
-        $("#email, #confirm_password").focusout(function() {
-            var results = checkEmail();
-            if(!results[0]) {
-                document.getElementById("checkMessage").innerHTML = results[1];
-                $('.btn_register').attr('disabled', true);
-            }
-            else {
-               $('.btn_register').attr('disabled', false);
-            }
-        });
+//        $("#email, #confirm_password").focusout(function(){
+//            var results = checkEmail();
+//            
+//            if(!results[0])
+//            {
+//                document.getElementById("checkMessage").innerHTML = results[1];
+//                $('.btn_register').attr('disabled', true);
+//            }
+//            else
+//            {
+//                $('.btn_register').attr('disabled', false);
+//            }
+//        });
     
 	//$('[data-toggle="tooltip"]').tooltip();
 	 
@@ -141,7 +144,7 @@ function sendFormData() {
     var url = window.location.href;
     url =  url.substring(0,url.lastIndexOf('/') +1);
     var formData = collectData();
-    $.ajax( {
+    $.ajax({
         type: 'post',
         url : url+'register',
         data: formData,
@@ -171,7 +174,8 @@ function checkPassword() {
         document.getElementById("checkMessage").style.color = "#58FA82";    // vihreä
         $('.btn_register').attr('disabled', false);
     } 
-    else if(pass1.length < 6) {
+    else if(pass1.length < 6)
+    {
         document.getElementById("checkMessage").innerHTML = "Salasana on liian lyhyt";
         document.getElementById("checkMessage").style.color = "#FF0000";    // punainen
         $('.btn_register').attr('disabled', false);
@@ -184,47 +188,53 @@ function checkPassword() {
     }
 }
 
-function Validator() {
-    //tsekkaa kentät
-    this.validate = function() {
-        if(this.checkRequired() && this.checkEmail() && this.checkOrganization()) {
+function Validator()
+{
+    this.validate = function()
+    {
+        if(this.checkRequired() && this.checkEmail() && this.checkOrganization())
+        {
             return true;
         }
-        if(!this.checkRequired()) {
-            //kentistä ei saa yksikään olla tyhjä
+        if(!this.checkRequired())
+        {
             console.log(document.getElementById("checkMessage"));
             document.getElementById("checkMessage").innerHTML += "Jotkin vaaditut kentät ovat tyhjiä</br>";
         }
         return false;
     };
     
-    this.checkEmail = function() {
-        //checkkaa että salasana on tarpeeksi pitkä
-        if(!$('.reg'+regpage).has('#email').length) {
+    this.checkEmail = function()
+    {
+        if(!$('.reg'+regpage).has('#email').length)
+        {
             return true;
         }
         var email = $("#email").val();
-        //katsoo että emailissa on @-merkki
-        if(!email.includes("@")) {
-            console.log("Vääränmuotoinen email");
+        if(!email.includes("@"))
+        {
             document.getElementById("checkMessage").innerHTML += "Vääränmuotoinen email</br>";
             return false;
         }
         var lastPart = $("#email").val().split('@')[1];
-        //tässä tsekkaa että loppu osa on hus.fi
-       if(lastPart !== "hus.fi") {
-           console.log("Väärä email osoite!");
-          document.getElementById("checkMessage").innerHTML += "Vain HUS -emailit ovat sallittuja</br>";
-          return false;
-       }
-       return true;
+
+        //Tähän chekki, että käytetään vain HUS-sähköpostia
+//        if(lastPart !== "hus.fi")
+//        {
+//            document.getElementById("checkMessage").innerHTML += "Vain HUS -emailit ovat sallittuja</br>";
+//            return false;
+//        }
+
+        return true;
     };
     
-    this.checkRequired = function() {
+    this.checkRequired = function()
+    {
         var goodToGo = true;
-        $('.reg'+regpage+' input:required').each(function(i, item) {
+        $('.reg'+regpage+' input:required').each(function(i, item){
 
-            if(!$(item).val()) {
+            if(!$(item).val())
+            {
                 $(item).css('border', '1px solid red');
                 goodToGo = false;
             }
@@ -233,27 +243,35 @@ function Validator() {
         
         return goodToGo;
     };
-    this.checkOrganization = function() {
+    this.checkOrganization = function()
+    {
         var goodToGo = true;
-        if(!$('.reg'+regpage).has('.organization_select').length) {
+        if(!$('.reg'+regpage).has('.organization_select').length)
+        {
             return goodToGo;
         }
-        //tsekki että kaikki organisaatio valinnat tehdään
-        if($('.organization_select[name="group1"] :selected').attr('class') === 'initial') {
+        
+        if($('.organization_select[name="group1"] :selected').attr('class') === 'initial')
+        {
             document.getElementById("checkMessage").innerHTML += "Sinun täytyy valita ensimmäinen organisaatio</br>";
             goodToGo = false;
         }
-        if($('.organization_select[name="group2"] :selected').attr('class') === 'initial') {
+        if($('.organization_select[name="group2"] :selected').attr('class') === 'initial')
+        {
             document.getElementById("checkMessage").innerHTML += "Sinun täytyy valita toinen organisaatio</br>";
             goodToGo = false;
         }
         
-        for(var i = 3; i<6; i++) {
-            if(!$('.organization_select[name="group'+i+'"]').hasClass('hidden') && $('.organization_select[name="group'+i+'"] :selected').attr('class') === 'initial') {
+        for(var i = 3; i<6; i++)
+        {
+            if(!$('.organization_select[name="group'+i+'"]').hasClass('hidden') && $('.organization_select[name="group'+i+'"] :selected').attr('class') === 'initial')
+            {
                 document.getElementById("checkMessage").innerHTML += "Organisaation valinta puuttuu</br>";
                 goodToGo = false;
             }
         }
+        
         return goodToGo;
+
     };
 }
