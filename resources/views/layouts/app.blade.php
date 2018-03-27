@@ -40,6 +40,8 @@
 		@if(!empty(Auth::user()) && Auth::user()->friendRequests(true))
                     @include('partials.message')
 		@endif
+		<!-- Add message notification here-->
+
 		
 		@if(!isset($nav_countdown))
 			@include('partials.training_notification')
