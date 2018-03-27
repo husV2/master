@@ -4,11 +4,11 @@ var submitSurveyUrl = "{{ url('survey/submit') }}";
 <script src="{{ URL::asset('js/views/survey.js') }}"></script>
 <link rel="stylesheet" href="{{ URL::asset('css/survey.css') }}">
 <style>
-	.vitality-1 {
+        .vitality-1 {
 		background-image: url({{ URL::asset('img/survey/vitality-1.jpg') }})
 	}
 	.vitality-2 {
-		background-image: url({{URL::asset('img/survey/vitality-2.jpg') }})
+		background-image: url({{ URL::asset('img/survey/vitality-2.jpg') }})
 	}
 	.vitality-3 {
 		background-image: url({{ URL::asset('img/survey/vitality-3.jpg') }})
