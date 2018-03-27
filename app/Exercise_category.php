@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Exercise_Category extends Model
+class Exercise_category extends Model
 {
     /**
      *

@@ -59,7 +59,7 @@ class StatisticsHelper
         {
             if($event->completed)
             {
-                $category = Exercise_Category::find(Exercise::find($event->ex_fk)->ex_category_fk);
+                $category = Exercise_category::find(Exercise::find($event->ex_fk)->ex_category_fk);
                 $arr[$category->name]["score"] += 1;
             }
         }
