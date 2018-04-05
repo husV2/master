@@ -240,6 +240,9 @@ h4, h5, h3, h2
 {
     #tab-title
     {
+        float: left;
+    }
+    #tab-username {
         float: right;
     }
     .tab-content

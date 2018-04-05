@@ -29,14 +29,12 @@
 }*/
 
 /** New style starts here **/
-.grid
-{
+.grid {
     height: 400px;
     overflow-x: hidden;
     overflow-y: scroll;
 }
-.grid-item
-{
+.grid-item {
     position: relative;
     box-sizing: border-box;
     padding: 5px 0px 5px 0px;
@@ -47,20 +45,17 @@
     vertical-align: middle;
     display: inline-block;
 }
-.grid-item .profile-img-container
-{
+.grid-item .profile-img-container {
     width: 50px;
     height: 50px;
     background-position: center;
     background-size: cover;
     float:left;
 }
-.grid-item p
-{
+.grid-item p {
     display: inline-block;
 }
-.friendReq_btn
-{
+.friendReq_btn {
     float:right;
 }
 
