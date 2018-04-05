@@ -201,8 +201,7 @@ class StatisticsHelper
      * If cache doesn't exist new cache entry will be created from existing data (NOTE! In the future we might need to delete old event entries
      * so it's important to keep this cache forever)
      */
-    public static function totalStats($user = null)
-    {
+    public static function totalStats($user = null) {
         if(!$user){ $user = Auth::user(); }
         $cacheName = config('personalCache.globalStats').$user->id;
         $cache = $this->cache($cacheName);
@@ -221,10 +220,8 @@ class StatisticsHelper
      * @param type $completes
      * @return boolean
      */
-    public static function completesOrSkipped($level, $group_id, $completes = TRUE)
-    {
-        if(!GroupHelper::exists($level))
-        {
+    public static function completesOrSkipped($level, $group_id, $completes = TRUE) {
+        if(!GroupHelper::exists($level)) {
             return false;
         }
         $column = $completes ? "completed" : "isSkipped";
@@ -244,8 +241,7 @@ class StatisticsHelper
      */
     public static function usedTime($level, $group_id)
     {
-        if(!GroupHelper::exists($level))
-        {
+        if(!GroupHelper::exists($level)) {
             return false;
         }
         return floatval(DB::table('hus_exercise')
