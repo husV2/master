@@ -1,0 +1,27 @@
+/* 	HUS colors
+    Main colours:
+	bluishgreen #269b9e
+	grey #a1a2a5
+	Accent colours:
+	pink #d70a78
+	purple #84428e
+	blue #26aae8
+	green #abc549
+	Menu:
+	Turquoise #135253
+	dark #262626*
+	bluishgrey #838895 */
+
+h4, h5, h3, h2
+{
+    text-transform: uppercase;
+    color: #269b9e;
+}
+#info-title
+{
+    float: left;
+    padding-left: 20px;
+}
+#info-username {
+    float: right;
+}

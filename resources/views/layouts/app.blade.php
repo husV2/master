@@ -30,6 +30,7 @@
 		  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="{{ URL::asset('css/home.css') }}">
 	<link rel="stylesheet" href="{{ URL::asset('css/menu.css') }}">
+	<link rel="stylesheet" href="{{ URL::asset('css/information.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/friend_request_message.css') }}">
 	<link rel="shortcut icon" href="{{{ asset('img/HUS_favicon.png') }}}">
     <link rel="stylesheet" href="{{ URL::asset('css/friend_request_message.css') }}">
@@ -43,18 +44,8 @@
                     @include('partials.message')
 		@endif
 
-		<!-- Add message notification here
+		<!-- Add message notification here-->
 
-		<div class="col-sm-2 col-sm-offset-10 col-logout">
-					<div class="link_placement">
-                                            @if(!Auth::guest())
-			<a class="link_user-profile" href="{{ url('/profile') }}" id="nav_profile">Tervetuloa, <?php echo  Auth::user()->username; ?>!</a>
-							<a class="link_logout" href="{{ url('/logout') }}">{{trans('main.logout')}}</a>
-                                            @endif
-				</div>
-            </div>
-
--->
 		@if(!isset($nav_countdown))
 			@include('partials.training_notification')
 		@endif
@@ -69,13 +60,13 @@
 						<li class="menu-item"><a href="{{ url('/charts') }}" id="nav_charts" data-scroll>{{ trans('main.charts') }}</a></li>
 						<li class="menu-item"><a href="{{ url('/profile') }}" aria-haspopup="true" id="nav_profile" data-scroll>{{ trans('main.profile') }}</a>
                             <ul>
-                                <li><a href='#'>Asetukset</a></li>
+                                <li><a href='{{ url('/profile/settings') }}'>{{ trans('main.settings') }}</a></li>
                             </ul>
                         </li>
                         <li class="menu-item"><a href="{{ url('/info') }}" aria-haspopup="true" id="nav_info" data-scroll>{{ trans('main.info') }}</a>
 							<ul>
-								<li><a href='#'>Työergonomia</a></li>
-								<li><a href='#'>Tietoturva</a></li>
+								<li><a href='/info/ergonomics'>{{ trans('main.ergonomics') }}</a></li>
+								<li><a href='/info/security'>{{ trans('main.security') }}</a></li>
 							</ul>
 						</li>
                         @if(!Auth::guest() && Auth::user()->isAdmin)

@@ -8,10 +8,25 @@
 	grey #a0a1a4 
 	darkg #262626*
 	bluishgrey #838895 */
+
+/* 	HUS colors
+    Main colours:
+	bluishgreen #269b9e
+	grey #a1a2a5
+	Accent colours:
+	pink #d70a78
+	purple #84428e
+	blue #26aae8
+	green #abc549
+	Menu:
+	Turquoise #135253
+	dark #262626*
+	bluishgrey #838895 */
+
 	
 .main-container
 {
-    margin-top: 50px;
+    margin-top: 50px; /*space for menu*/
     position: relative;
 }
 /* Achievement popup */
@@ -68,7 +83,7 @@
 
 /* Aktiivisen linkin väri */
 .link_usernav.nav_active {
-    color: #249b9e;
+    color: #269b9e;
     text-shadow: 1px 1px 1px #a0a1a4;
 }
 
@@ -109,7 +124,7 @@ th > span {
  
 ::-webkit-scrollbar-thumb {
     border-radius: 2px;
-    background-color: #269b9e; 
+    background-color: #269b9e;
 }
 td.fc-today{
     border-style:solid !important;
@@ -148,7 +163,7 @@ td.fc-today{
 h4 {
 	text-transform: uppercase;
     margin: 0 auto;
-	color: #249b9e;
+	color: #269b9e;
 	padding-bottom: 8px;
 	padding-top: 12px;
 }
@@ -164,7 +179,7 @@ h4 {
 
 /*HUS title and other extra content */
 .text_title {
-	color: #249b9e;
+	color: #269b9e;
 	text-transform: uppercase;
 	font-size: 23px;
 	font-weight: lighter;
@@ -224,7 +239,7 @@ h4 {
 	display: block;
 	float: bottom;
 	text-align: right;
-	color: #249b9e;
+	color: #269b9e;
 	font-size: 14px;
 	font-weight: 600;
 	font-family: arial, sans-serif;
@@ -289,16 +304,16 @@ div.avatarbox_ribbon {
 .link_modify:hover {
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #249b9e;
+	color: #269b9e;
 	
 }
 
 #btn_prev:hover {
-	color: #249b9e;
+	color: #269b9e;
 	text-shadow: 1px 1px 1px #a0a1a4;
 }
 #btn_next:hover {
-	color: #249b9e;
+	color: #269b9e;
 	text-shadow: 1px 1px 1px #a0a1a4;
 }
 .copyright {
@@ -318,7 +333,7 @@ div.avatarbox_ribbon {
 	position: absolute;
 	left: -35px;
 	top: -70px;
-	background-color: #249b9e;
+	background-color: #269b9e;
 	border-radius: 50%;
 	border-width: 10px;
 	width: 200px;
@@ -417,7 +432,7 @@ div.avatarbox_ribbon {
 	border-radius: 50%;
 	width: 200px;
 	height: 200px;
-	background-color: #249b9e;
+	background-color: #269b9e;
 	color: white;
 	font-size: 16px;
 	text-align: center;
@@ -440,7 +455,7 @@ div.avatarbox_ribbon {
 
 .modal-header {
 	text-transform: uppercase;
-	color: #249b9e;
+	color: #269b9e;
 	margin-top: 25px;
 	margin-bottom: 12px;
 	border: none;
@@ -472,7 +487,7 @@ div.avatarbox_ribbon {
 	margin-top: 20px;
 	margin-left: 20px;
 	font-size: 25px;
-	color: #249b9e;
+	color: #269b9e;
 }
 
 #cd-text{
@@ -539,7 +554,7 @@ div.avatarbox_ribbon {
 	float: left;
 	margin: 4px 10px 4px 40px;
 	font-size: 18px;
-	color: #249b9e;
+	color: #269b9e;
 	text-transform:uppercase;
 	width:100%;
 }
@@ -589,7 +604,7 @@ div.avatarbox_ribbon {
 	text-align:center;
 }
 #cd-sn-nav:hover { background-color: #8a8b8f;}
-#cd-ac-nav:hover{background-color: #135253;}
+#cd-ac-nav:hover{ background-color: #135253;}
 
 #cd-decline {
 	background-color:#d61479;
@@ -730,5 +745,6 @@ div.avatarbox_ribbon {
 /*RESPONSIVE*/
 
 @media only screen and ( max-width: 40em ) {
+
 
 }
