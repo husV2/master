@@ -36,7 +36,6 @@
 @endsection
 @section('content')
 <div class="row">
-    <h1>{{trans('auth.change_profile_settings')}}</h1>
     <div class='col-md-2 col-sm-12'></div>
     <div class='col-md-6 col-sm-12 edit-section'>
         <?php if(isset($settings) && count($settings) > 0):?>

@@ -132,16 +132,38 @@ class MainController extends Controller
         return empty($achievement) ? $view : $view->with('achievement', $achievement);
     }
     
-//    public function editProfile()
-//    {
-//        $user = Auth::user();
-//        $ret_settings = UserHelper::setSettingsListForForm($user);
-//
-//        $view = view('profile_edit')
-//                ->with('settings', $ret_settings);
-//        
-//        return $view;
-//    }
+    public function settingsProfile()
+    {
+        $user = Auth::user();
+        $ret_settings = UserHelper::setSettingsListForForm($user);
+
+        $view = view('profile_edit')
+                ->with('settings', $ret_settings);
+
+        return $view;
+    }
+    public function info() {
+        $user = Auth::user();
+        $ret_settings = UserHelper::setSettingsList($user);
+        //return main view of info page
+        $view = view('information')
+            ->with('settings', $ret_settings);
+        return $view;
+    }
+    public function infoErgo() {
+        $user = Auth::user();
+        $ret_settings = UserHelper::setSettingsList($user);
+        $view = view('info/info_ergonomics')
+            ->with('settings', $ret_settings);
+        return $view;
+    }
+    public function infoSecurity() {
+        $user = Auth::user();
+        $ret_settings = UserHelper::setSettingsList($user);
+        $view = view('info/info_security')
+            ->with('settings', $ret_settings);
+        return $view;
+    }
     
     /*
      * Displays the statistics page with different charts.

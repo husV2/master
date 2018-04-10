@@ -13,9 +13,10 @@
                             <div class="col-sm-1 col-r-btn equal nopads"><div class="btn_placement"><button id="btn_next"><span class="glyphicon glyphicon-menu-right"></span></button></div></div>
 			</div>
 		</div>
+        <div class="col-md-offset-1">
             <?= Auth::user()->buddy->view(); ?>
+        </div>
 	</div>
-		
 </div>
 <?= isset($modal) ? $modal : "" ?>
 <?= isset($settings_modal) ? $settings_modal : "" ?>

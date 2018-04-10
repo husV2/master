@@ -34,11 +34,12 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/', 'MainController@index');
     Route::get('profile','MainController@profile');
     Route::get('profile/edit', 'MainController@editProfile');
+    Route::get('profile/settings', 'MainController@settingsProfile');
     Route::get('profile/{id}', 'MainController@guestProfile');
     Route::get('charts', 'MainController@charts');
-    Route::get('info', function(){
-        return view('info');
-    });
+    Route::get('info', 'MainController@info');
+    Route::get('info/ergonomics', 'MainController@infoErgo');
+    Route::get('info/security', 'MainController@infoSecurity');
     
     /* Admin navigation */
     Route::get('admin','AdminController@index');
