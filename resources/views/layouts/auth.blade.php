@@ -28,17 +28,19 @@
 	<body>
             <div class="container">
 			<div class="row">
-				<div class="col-xs-8 col-sm-6">
+				<div class="col-md-2">
 					<img src="{{ URL::asset('img/logo.png') }}" alt="Image not found" class="img-responsive">
 				</div>
-				<div class="col-xs-4 col-sm-6 text-right">
-					<a href="#">FI</a>
+				<div class="col-md-2" id="language-change">
+					<a href="#" id="fin-lang">FI</a>
 					<span class="stickblock">|</span>
-					<a href="#">EN</a>
+					<a href="#" id="swe-lang">SE</a>
+					<span class="stickblock">|</span>
+					<a href="#" id="eng-lang">EN</a>
 				</div>
 			</div>
 			<div class="row" id="circletainer_row">
-				<div class="col-sm-12">
+				<div class="col-md-3 col-md-offset-5">
 					<div class="circletainer">
 						<p>{{trans('main.welcome')}}</p>
 					</div>

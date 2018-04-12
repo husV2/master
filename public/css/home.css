@@ -480,6 +480,9 @@ div.avatarbox_ribbon {
 	font-size: 30px;
 	text-shadow:0px -1px 0px #2b665e;
 }
+#exercise-div {
+	margin-top: 50px;
+}
 
 #cd-nav {
 	float: top;
@@ -491,7 +494,7 @@ div.avatarbox_ribbon {
 }
 
 #cd-text{
-	margin: none;
+	margin: 0;
 	font-weight: bold;
 }
 
@@ -558,6 +561,7 @@ div.avatarbox_ribbon {
 	text-transform:uppercase;
 	width:100%;
 }
+
 
 #cd-ac-nav {
 	display: block;

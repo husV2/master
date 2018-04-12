@@ -81,7 +81,7 @@
 					<a href="{{ url('/') }}">
 					<img src="{{ URL::asset('img/logo.png') }}" class="img-responsive" id="logo-hus"></a>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-6" id="exercise-div">
 					@if(!isset($nav_countdown))
 						<div class="cd_cont"><p id="cd-title" style="display: none">{{trans('main.train_time')}}</p>
 							<button class="cd-accept" id="cd-ac-nav" style="display: none">{{trans('main.train_now')}}</button>

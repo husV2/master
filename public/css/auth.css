@@ -1,16 +1,29 @@
-html{
- height:100%;
- min-height:100%;/*asdf*/
+/* 	HUS colors
+    Main colours:
+	bluishgreen #269b9e
+	grey #a1a2a5
+	Accent colours:
+	pink #d70a78
+	purple #84428e
+	blue #26aae8
+	green #abc549
+	Menu:
+	Turquoise #135253
+	dark #262626*
+	bluishgrey #838895 */
+
+html {
+	height:100%;
+	min-height:100%;
 }
-body{
+
+body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     min-height:100%;
 }
 
 .container {
-    /*border: solid 1px #a1a2a5;*/
     margin-top: 1%;
-	
 }
 
 .row:nth-child(1) {
@@ -18,14 +31,13 @@ body{
 	color: #a1a2a5;
 }
 .row:nth-child(2) > div.col-sm-12 {
-	height: 80px;
+	height: 10px;
 }
 .row:nth-child(3) {
-	height: 400px;
+	height: 300px;
 }
 .row:nth-child(3) > div {
-	height: 90%;
-
+	height: 80%;
 }
 .row:nth-child(4) {
 	padding: 0 2%;
@@ -41,9 +53,9 @@ a:hover {
 	text-decoration: none;
 	font-weight: bold;
 	color: #249b9e;
-	
 }
 .text-button {
+
 }
 .text-button:hover {
 	text-decoration: none;
@@ -59,9 +71,8 @@ a:hover {
 	-webkit-box-shadow: 1px 1px 3px #666;
 	box-shadow: 1px 1px 3px #666;
     float: right;
-    position: absolute;
-    right: 30%;
-    top: -50%;
+    position: relative;
+    right: 10%;
 }
 
 .circletainer > p {
@@ -74,13 +85,44 @@ a:hover {
     color: white;
 	text-shadow:0px -1px 0px #2b665e;
 }
+#language-change {
+	float: right;
+	padding-right: 10px;
+	font-weight: bold;
+	font-size: large;
+}
+#fin-lang {
+	color: #84428e;
+}
+#fin-lang:hover {
+	text-decoration: none;
+	font-weight: bold;
+	color: #135253;
+}
+#swe-lang {
+	color: #abc549;
+}
+#swe-lang:hover {
+	text-decoration: none;
+	font-weight: bold;
+	color: #135253;
+}
+#eng-lang {
+	color: #d70a78;
+
+}
+#eng-lang:hover {
+	text-decoration: none;
+	font-weight: bold;
+	color: #135253;
+}
 .helper_welcome {
 	margin-left:10%;
 }
 form.form-horizontal {
     width: 50%;
-    margin-left: 15%;
-    margin-top: 10%;
+    margin-left: 20%;
+	margin-top: 1%;
 }
 
 .form-control {
@@ -90,8 +132,8 @@ form.form-horizontal {
     border-radius: 3px;
 }
 .d_newuser {
-    width: 50%;
-    margin-left: 15%;
+    width: 80%;
+    margin-left: 20%;
 }
 
 .dunno > a {
@@ -108,6 +150,7 @@ form.form-horizontal {
     color: #a1a2a5;
     font-size: 16px;
 }
+
 /* tips */
 .tooltip-inner {
 	background-color: #abc549;
@@ -314,38 +357,48 @@ p.label-normal {
 	cursor: help;
 }
 
-/* Mobile */
-@media only screen and (max-width: 767px) {
-    #placeholder_avatar > img{
-        display: none;
-    }
-    
-    #circletainer_row {
-        display: none;
-    }
-    .d_newuser {
-        width: 33%;
-    }
-    #apurigif {
-        position: relative;
-        top: -140px;  /* siirtää kuvan lähemmäs muita elementtejä */
-        z-index: -1; /* katsoo ettei kuva peitä mitään */
-    }
-    /* poistetaan apuri modalista */
-    #apurigif_modal {
-        display: none;
-    }
+#apurigif {
+	width: 250px;
+	height: auto;
+
 }
-/* Tabletit (768px - 991px) */
-@media only screen and (min-width:768px) and (max-width:991px) {
-    
+#login-form {
 }
 
-/* Pikku säätöä pienimmille luureille. (Esim. iPhone 5) */
-@media only screen and (max-width: 321px) {
+@media only screen and ( max-width: 62.5em ) {
+	body{
+		/*background-color: yellow; testailua varten!*/
+	}
+	#apurigif {
+		display: none;
+	}
+	form.form-horizontal {
+		width: 60%;
+		margin-left: 20%;
+		margin-top: 8%;
+	}
+}
+
+@media only screen and ( max-width: 40em )  {
+	body{
+		/*background-color: #2cb1b5; Testailua varten!*/
+	}
+	#placeholder_avatar > img{
+		display: none;
+	}
+
+	#circletainer_row {
+		display: none;
+	}
+	.d_newuser {
+		width: 33%;
+	}
     #apurigif {
-        position: relative;
-        top: -95px; /* siirtää kuvan lähemmäs muita elementtejä */
-        z-index: -1; /* katsoo ettei kuva peitä mitään */
+        display: none; /*remove gif*/
     }
+	form.form-horizontal {
+		width: 60%;
+		margin-left: 20%;
+		margin-top: 20%;
+	}
 }
