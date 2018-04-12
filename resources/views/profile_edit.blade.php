@@ -36,8 +36,11 @@
 @endsection
 @section('content')
 <div class="row">
-    <div class='col-md-2 col-sm-12'></div>
-    <div class='col-md-6 col-sm-12 edit-section'>
+    <div class="col-md-2 col-md-offset-3"><h2 id="info-title">{{trans('main.settings')}}</h2></div>
+    <div class="col-md-2 col-md-offset-2"><h2 id="info-username">{{$settings["username"]}}</h2></div>
+</div>
+    <div class="row">
+    <div class='col-md-6 col-md-offset-3 edit-section'>
         <?php if(isset($settings) && count($settings) > 0):?>
         <form method="post" id="update-form" action="{{url('edit/profile')}}" role="form">
             {{ csrf_field() }}
